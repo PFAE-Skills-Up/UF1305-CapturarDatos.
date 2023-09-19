@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro datos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Contenedor del formulario -->
+    <div class="formData">
+        <form id="registro" action="" onsubmit="event.preventDefault();"> <!-- Formulario con 'event.preventDefaul()' para evitar la recarga de la web -->
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" placeholder="Nombre" id="nombre"><input type="text" placeholder="Apellido" id="apellido"><br>
+            <label for="fechaNac">Fecha Nacimiento</label>
+            <input type="date" name="fechaNac" id="fechaNac"><br>
+            <label for="email">Email<label>
+            <input type="email" name="email" id="email"><br>
+            <label for="numTef">Numero de Telefono</label>
+            <input type="tel" name="numTef" id="numTef"><br>
+            <label for="intereses">Intereses: </label>
+            <input type="checkbox" name="intereses" id="informatic" value="informática"><label for="informatic">Informática</label>
+            <input type="checkbox" name="intereses" id="ofimatica" value="ofimática"><label for="ofimatica">Ofimática</label>
+            <input type="checkbox" name="intereses" id="diseñoweb" value="diseño web"><label for="diseñoweb">Diseño Web</label>
+            <input type="checkbox" name="intereses" id="bbdd" value="bases de datos"><label for="bbdd">Bases de Datos</label><br>
+            <label for="otros">Otros</label>
+            <input type="text" name="otros" id="otros"><br>
+            <button onclick="mostrarDatos()"> Enviar </button>
+        </form>
+
+        <!-- Contenedor para mostrar mensaje -->
+        <div id="datos">
+        </div>
+
+    </div>
+    <script src="js/registros.js"></script>
+</body>
+</html>

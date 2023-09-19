@@ -1,0 +1,40 @@
+.formData, form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+}
+
+.formData {
+    background-color: lightgoldenrodyellow;
+    padding: 2em;
+    align-self: center;
+    justify-content: center;
+}
+
+input, label {
+    margin: 3px;
+}
+
+#datos {
+    display: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#datos {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
